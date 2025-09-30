@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { InputBox } from '../../06CurrencyConvertor/src/components';
+//import { InputBox } from '../../06CurrencyConvertor/src/components';
 import { Form } from 'react-router-dom';
 
 function App() {
@@ -12,9 +12,7 @@ function App() {
   const bmicalculate =  () =>{
     const bmi= ((weigth/ (height*height))*10000).toFixed(2);
     setbmi(bmi);
-    if(bmi == NaN){
-      setmessage('Please enter height and weigth ')
-    }
+    
     if(bmi < 18.5){
       setmessage('Under Weigth ');
     }
@@ -39,7 +37,7 @@ function App() {
 
   return (
     
-    <div  className='w-screen h-screen  bg-white border-spacing-1 border-yellow-500 flex justify-start'>
+    <div  className='  w-screen h-screen  bg-white border-spacing-1 border-yellow-500 flex justify-start'>
 
           {/* image */}
           <div className=' w-140 h-60 px-5 py-5 '>
@@ -57,7 +55,7 @@ function App() {
           </div>
 
       <div>
-        <h1 className='text-yellow-800 text-center text-6xl md font-extrabold mt-5  h-12 ml-48 underline underline-offset-4 decoration-8 decoration-yellow-300' > BMI CALCULATOR </h1>
+        <h1 className=' text-yellow-800 text-center text-6xl md font-extrabold mt-5  h-12 ml-48 underline underline-offset-4 decoration-8 decoration-yellow-300' > BMI CALCULATOR </h1>
       
         <div className='bg-green-300 py-12 px-8  mt-15 ml-56 mr-10 h-120'>
 
@@ -90,6 +88,7 @@ function App() {
           
       </div>
     </div>
+    
 
    
    
